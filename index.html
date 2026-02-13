@@ -1,46 +1,42 @@
 <!-- TradingView Widget BEGIN -->
 <style>
-  body {
-    margin:0;
-    background:#191919;
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #191919;
+    overflow-x: hidden;
   }
 </style>
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/markets/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+<div class="tradingview-widget-container" style="height:100%;width:100%">
+  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+  <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/symbols/INDEX-BTCUSD/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
-  "symbols": [
-    {
-      "proName": "BITSTAMP:BTCUSD",
-      "title": "Bitcoin"
-    },
-    {
-      "proName": "BITSTAMP:ETHUSD",
-      "title": "Ethereum"
-    },
-    {
-      "proName": "SAXO:USDEUR",
-      "title": "USD EUR"
-    },
-    {
-      "proName": "SAXO:EURUSD",
-      "title": "EUR USD"
-    },
-    {
-      "proName": "FXPRO:USSPX500",
-      "title": "SP500 Index"
-    },
-    {
-      "proName": "VANTAGE:NIKKEI225",
-      "title": "Nikkei 225"
-    }
-  ],
-  "colorTheme": "dark",
+  "allow_symbol_change": true,
+  "calendar": true,
+  "details": false,
+  "hide_side_toolbar": false,
+  "hide_top_toolbar": false,
+  "hide_legend": false,
+  "hide_volume": false,
+  "hotlist": false,
+  "interval": "D",
   "locale": "es",
-  "largeChartUrl": "",
-  "isTransparent": false,
-  "showSymbolLogo": true
+  "save_image": true,
+  "style": "1",
+  "symbol": "INDEX:BTCUSD",
+  "theme": "dark",
+  "timezone": "Etc/UTC",
+  "backgroundColor": "#0F0F0F",
+  "gridColor": "rgba(242, 242, 242, 0.06)",
+  "watchlist": [],
+  "withdateranges": true,
+  "compareSymbols": [],
+  "studies": [
+    "STD;Divergence%1Indicator",
+    "STD;MA%1Cross"
+  ],
+  "autosize": true
 }
   </script>
 </div>
